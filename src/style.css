@@ -19,6 +19,8 @@ h6 {
 h1 {
   font-size: 62px;
   line-height: 1em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 p {
@@ -56,5 +58,5 @@ button:hover {
 .hero p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
-  width: 500px;
+  width: 550px;
 }
