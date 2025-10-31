@@ -151,7 +151,7 @@ button:hover {
 @media (max-width: 576px) {
   .hero {
     margin: 0;
-    padding: 100px;
+    padding: 60px 30px;
   }
 
   .hero h1 {
@@ -163,11 +163,11 @@ button:hover {
     max-width: 300px;
   }
 
-  ul {
+  .sub-text ul {
     font-size: var(--media-secondary-font-size);
   }
 
-  li {
+  .sub-text li {
     display: block;
   }
 
