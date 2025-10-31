@@ -1,6 +1,9 @@
 :root {
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Poppins", sans-serif;
+  --primary-color: #a3b18a;
+  --secondary-color: #588157;
+  --media-secondary-font-size: 12px;
 }
 
 body {
@@ -38,7 +41,7 @@ li {
 }
 
 button {
-  background-color: #a3b18a;
+  background-color: var(--primary-color);
   border: none;
   font-family: var(--secondary-font);
   font-size: 12px;
@@ -52,11 +55,140 @@ button:hover {
 
 .hero {
   background-color: #babf95;
-  padding: 200px;
+  padding: 185px;
 }
 
 .hero p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
   width: 550px;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.card-item {
+  color: white;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-item::before {
+  /* Background image styling*/
+  background-size: cover;
+  background-position: center;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.5 ease;
+}
+
+.card-item::after {
+  /* Color above background image */
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  position: absolute;
+  z-index: 1;
+}
+
+.card-content {
+  /* Styling content */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-food-shelf::before {
+  background-image: url("/images/foodshelf.jpg");
+}
+
+.card-food-shelf::after {
+  background-color: var(--primary-color);
+}
+
+.card-community-engagment::before {
+  background-image: url("/images/hands.jpg");
+}
+
+.card-community-engagment::after {
+  background-color: var(--secondary-color); /* Red/Salmon color */
+}
+
+.card-content i {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.card-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 15px;
+}
+
+.card-item:hover::before {
+  transform: scale(1.05); /* Image slightly zooms on hover */
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin: 0 -30px;
+    padding: 100px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: var(--media-secondary-font-size);
+    max-width: 300px;
+  }
+
+  ul {
+    font-size: var(--media-secondary-font-size);
+  }
+
+  li {
+    display: block;
+  }
+
+  button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .card-item {
+    max-height: 200px;
+  }
+
+  .card-content i {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-content p {
+    font-size: var(--media-secondary-font-size);
+  }
 }
