@@ -6,10 +6,6 @@
   --media-secondary-font-size: 12px;
 }
 
-body {
-  width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -30,18 +26,8 @@ p {
   font-family: var(--secondary-font);
 }
 
-ul {
-  margin: 30px -50px;
-}
-
-li {
-  display: inline;
-  margin: 20px;
-  list-style-type: none;
-}
-
 button {
-  background-color: var(--primary-color);
+  background-color: #a3b18a;
   border: none;
   font-family: var(--secondary-font);
   font-size: 12px;
@@ -53,15 +39,31 @@ button:hover {
   transition: all ease-in-out 500ms;
 }
 
+.bg-color {
+  background-color: var(--secondary-color);
+}
+
 .hero {
   background-color: #babf95;
-  padding: 185px;
+  padding: 150px;
 }
 
 .hero p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
   width: 550px;
+}
+
+.sub-text ul {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 30px -50px;
+}
+
+.sub-text li {
+  display: inline;
+  font-family: var(--secondary-font);
+  margin: 20px; /* between each item */
+  list-style-type: none;
 }
 
 .container-fluid {
@@ -125,7 +127,7 @@ button:hover {
 }
 
 .card-community-engagment::after {
-  background-color: var(--secondary-color); /* Red/Salmon color */
+  background-color: var(--secondary-color);
 }
 
 .card-content i {
@@ -148,12 +150,12 @@ button:hover {
 
 @media (max-width: 576px) {
   .hero {
-    margin: 0 -30px;
+    margin: 0;
     padding: 100px;
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .hero p {
