@@ -66,6 +66,40 @@ button:hover {
   list-style-type: none;
 }
 
+.about-section {
+  background-color: #babf95;
+  padding: 100px;
+}
+
+.about-section h1 {
+  text-align: center;
+  text-transform: none;
+}
+
+.about-statement {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: white;
+  margin: 0 auto;
+  padding: 200px;
+}
+
+.bg-mission {
+  background-image: url("/images/community.jpg");
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: 25% 5%;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.mission-position {
+  margin: 100px 50px;
+}
+
+.mission-style {
+  /* h2 */
+  font-size: 32px;
+}
+
 .container-fluid {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -192,5 +226,31 @@ button:hover {
 
   .card-content p {
     font-size: var(--media-secondary-font-size);
+  }
+
+  .about-section {
+    font-size: 32px;
+    padding: 60px 30px;
+  }
+
+  .about-statement {
+    padding: 50px;
+    font-size: var(--media-secondary-font-size);
+  }
+
+  .mission-position {
+    font-size: var(--media-secondary-font-size);
+  }
+
+  .mission-style {
+    font-size: 25px;
+  }
+
+  .bg-mission {
+    background-image: url("/images/community.jpg");
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 10px;
   }
 }
