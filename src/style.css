@@ -29,9 +29,10 @@ p {
 button {
   background-color: #a3b18a;
   border: none;
+  border-radius: 25px;
   font-family: var(--secondary-font);
-  font-size: 12px;
-  padding: 10px 15px;
+  font-size: 14px;
+  padding: 15px 25px;
 }
 
 button:hover {
@@ -43,6 +44,33 @@ footer {
   background-color: #babf95;
   margin: 50px 0 0 0;
   padding: 150px;
+}
+
+footer .email-link,
+.social-links {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+}
+
+footer .email-link a,
+.social-links a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+footer .email-link a:hover,
+.social-links a:hover {
+  color: black;
+}
+
+footer .h2 {
+  font-size: 30px;
+}
+
+footer p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 2em;
 }
 
 .bg-color {
@@ -110,17 +138,17 @@ footer {
 .contact-style {
   /* h3 */
   font-size: 28px;
-  color: white;
+  color: black;
 }
 
 .contact-style a {
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all ease-in-out 500ms;
 }
 
 .contact-style a:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .container-fluid {
@@ -205,15 +233,21 @@ footer {
   transform: scale(1.05); /* Image slightly zooms on hover */
 }
 
-.email-link,
-.social-links,
-footer p {
-  color: rgba(0, 0, 0, 0.6);
+.btn-branding {
+  background-color: #a3b18a;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 5em;
+  padding: 15px 25px;
+  text-decoration: none;
 }
 
-.email-link a,
-.social-links a {
-  text-decoration: none;
+.btn-branding:hover {
+  background-color: #588157;
+  transition: all ease-in-out 500ms;
 }
 
 @media (max-width: 576px) {
@@ -294,5 +328,37 @@ footer p {
 
   .contact-style {
     font-size: 20px;
+  }
+
+  footer .email-link,
+  .social-links {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: var(--media-secondary-font-size);
+  }
+
+  footer .email-link a,
+  .social-links a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+  }
+
+  footer .email-link a:hover,
+  .social-links a:hover {
+    color: black;
+  }
+
+  footer .h2 {
+    font-size: 18px;
+  }
+
+  footer p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: var(--media-secondary-font-size);
+    line-height: 2em;
+  }
+
+  .btn-branding {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
