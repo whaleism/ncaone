@@ -46,6 +46,12 @@ footer {
   padding: 150px;
 }
 
+footer p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 2em;
+}
+
 footer .email-link,
 .social-links {
   color: rgba(0, 0, 0, 0.6);
@@ -65,16 +71,6 @@ footer .email-link a:hover,
 
 footer .h2 {
   font-size: 30px;
-}
-
-footer p {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 2em;
-}
-
-.bg-color {
-  background-color: var(--secondary-color);
 }
 
 .hero {
@@ -250,6 +246,19 @@ footer p {
   transition: all ease-in-out 500ms;
 }
 
+.credit {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.credit a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.credit a:hover {
+  color: black;
+}
+
 @media (max-width: 576px) {
   .hero {
     margin: 85px 0 0 0;
@@ -363,5 +372,9 @@ footer p {
   .btn-branding {
     font-size: var(--media-secondary-font-size);
     padding: 10px 20px;
+  }
+
+  .credit {
+    font-size: var(--media-secondary-font-size);
   }
 }
