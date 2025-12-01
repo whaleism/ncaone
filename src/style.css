@@ -330,6 +330,10 @@ footer p {
     font-size: 20px;
   }
 
+  footer {
+    padding: 50px;
+  }
+
   footer .email-link,
   .social-links {
     color: rgba(0, 0, 0, 0.6);
@@ -354,11 +358,10 @@ footer p {
   footer p {
     color: rgba(0, 0, 0, 0.6);
     font-size: var(--media-secondary-font-size);
-    line-height: 2em;
   }
 
   .btn-branding {
-    font-size: 12px;
+    font-size: var(--media-secondary-font-size);
     padding: 10px 20px;
   }
 }
