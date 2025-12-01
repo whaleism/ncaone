@@ -39,31 +39,32 @@ button:hover {
   transition: all ease-in-out 500ms;
 }
 
+footer {
+  background-color: #babf95;
+  margin: 50px 0 0 0;
+  padding: 150px;
+}
+
 .bg-color {
   background-color: var(--secondary-color);
 }
 
 .hero {
   background-color: #babf95;
+  margin: 85px 0 0 0;
   padding: 150px;
+  text-align: center;
 }
 
 .hero p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
-  width: 550px;
+  margin: 30px auto;
+  width: 500px;
 }
 
-.sub-text ul {
-  color: rgba(0, 0, 0, 0.6);
-  margin: 30px -50px;
-}
-
-.sub-text li {
-  display: inline;
-  font-family: var(--secondary-font);
-  margin: 20px; /* between each item */
-  list-style-type: none;
+.home-mission {
+  padding: 50px;
 }
 
 .about-section {
@@ -204,9 +205,20 @@ button:hover {
   transform: scale(1.05); /* Image slightly zooms on hover */
 }
 
+.email-link,
+.social-links,
+footer p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.email-link a,
+.social-links a {
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   .hero {
-    margin: 0;
+    margin: 85px 0 0 0;
     padding: 60px 30px;
   }
 
@@ -217,14 +229,6 @@ button:hover {
   .hero p {
     font-size: var(--media-secondary-font-size);
     max-width: 300px;
-  }
-
-  .sub-text ul {
-    font-size: var(--media-secondary-font-size);
-  }
-
-  .sub-text li {
-    display: block;
   }
 
   button {
@@ -247,6 +251,14 @@ button:hover {
   }
 
   .card-content p {
+    font-size: var(--media-secondary-font-size);
+  }
+
+  .home-mission h2 {
+    font-size: 18px;
+  }
+
+  .home-mission p {
     font-size: var(--media-secondary-font-size);
   }
 
