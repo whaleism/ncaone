@@ -101,6 +101,27 @@ button:hover {
   font-size: 32px;
 }
 
+.bg-contact {
+  background-color: #babf95;
+  padding: 15px;
+}
+
+.contact-style {
+  /* h3 */
+  font-size: 28px;
+  color: white;
+}
+
+.contact-style a {
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 500ms;
+}
+
+.contact-style a:hover {
+  color: black;
+}
+
 .container-fluid {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -257,5 +278,9 @@ button:hover {
     background-position: top;
     background-repeat: no-repeat;
     padding: 10px;
+  }
+
+  .contact-style {
+    font-size: 20px;
   }
 }
